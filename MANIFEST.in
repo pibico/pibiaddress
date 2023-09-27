@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include pibiaddress *.css
+recursive-include pibiaddress *.csv
+recursive-include pibiaddress *.html
+recursive-include pibiaddress *.ico
+recursive-include pibiaddress *.js
+recursive-include pibiaddress *.json
+recursive-include pibiaddress *.md
+recursive-include pibiaddress *.png
+recursive-include pibiaddress *.py
+recursive-include pibiaddress *.svg
+recursive-include pibiaddress *.txt
+recursive-exclude pibiaddress *.pyc
