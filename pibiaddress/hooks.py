@@ -14,7 +14,7 @@ app_license = "MIT"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/pibiaddress/css/pibiaddress.css"
-# app_include_js = "/assets/pibiaddress/js/pibiaddress.js"
+app_include_js = "/assets/pibiaddress/js/pibiaddress.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/pibiaddress/css/pibiaddress.css"
@@ -188,3 +188,17 @@ user_data_fields = [
 #	"pibiaddress.auth.validate"
 # ]
 
+fixtures = [
+  {
+    "dt": "Custom Field",
+    "filters": [["dt", "in", ("Address")], ["name", "like", "%ad_%"]]
+  },
+  {
+    "dt": "Client Script",
+    "filters": [["dt", "in", ("Address")], ["name", "like", "%ad_%"]]
+  },
+  {
+    "dt": "Property Setter",
+    "filters": []
+  },  
+]
